@@ -3,10 +3,6 @@ This project was carried out by a group of master's students (including myself) 
 A real-time 3D visualization and optimization tool for C130 Hercules aircraft design using Pareto front interpolation and interactive parameter exploration.
 More deatils can be found in the projects section of my Linkedin profile: www.linkedin.com/in/francesco-sessa-aer
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
-![Python](https://img.shields.io/badge/python-3.11-blue.svg)
-
 ## 📋 Overview
 
 This application provides an interactive graphical interface for exploring multi-objective aircraft design optimization results. It combines:
@@ -14,17 +10,20 @@ This application provides an interactive graphical interface for exploring multi
 - **Interactive parameter control** via Tkinter sliders
 - **Pareto front interpolation** for constrained and unconstrained optimization
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+
 The tool allows engineers and researchers to visualize trade-offs between different design objectives (e.g., span, chord, wing position) and instantly see the resulting aircraft configuration in 3D.
-
-
-https://github.com/user-attachments/assets/ea178e4f-2317-4cf3-af54-b785104a1977
-
 
 ## ✨ Features
 - You can choose to display 3 types of optimization:
   - 2 Design Variable optimization (span & chord)
   - 3 Design Variable optimization (span, chord & wing position)
-  - Constrained and unconstrained Pareto fronts
+  - Constrained (on longitudinal stability and maneuverability)  and unconstrained Pareto fronts
+
+https://github.com/user-attachments/assets/ea178e4f-2317-4cf3-af54-b785104a1977
+
 
 ## 💻 System Requirements
 ### Operating System
