@@ -14,7 +14,7 @@ This application provides an interactive graphical interface for exploring multi
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
 
-The tool allows engineers and researchers to visualize trade-offs between different design objectives (e.g., span, chord, wing position) and instantly see the resulting aircraft configuration in 3D.
+The tool allows engineers and researchers to visualize trade-offs between different design objectives (e.g., span, chord, wing position) and instantly see the resulting aircraft configuration in 3D. The geometry of the wing has been varied while maintaining constant relative ratios such as the ratio of the tip chord to the root chord.
 
 ## ✨ Features
 - You can choose to display 3 types of optimization:
