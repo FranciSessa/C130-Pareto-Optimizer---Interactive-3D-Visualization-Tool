@@ -45,7 +45,7 @@ The tool visualizes results from multi-objective optimizations with the followin
 | Constraint | Requirement | Purpose |
 |------------|-------------|---------|
 | **SSM** (Static Margin, sign-reversed) | > 0.15 | Ensures longitudinal static stability |
-| **Tail Volume Coefficient** (ηh) | 0.7 ≤ ηh ≤ 1.25 | Guarantees longitudinal stability and controllability |
+| **horizontal tailplane volumetric coefficient** (ηh) | 0.7 ≤ ηh ≤ 1.25 | Guarantees longitudinal stability and controllability |
 
 #### Weight Configuration Examples
 
