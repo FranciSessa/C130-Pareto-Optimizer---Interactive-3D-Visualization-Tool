@@ -56,6 +56,13 @@ The optimization uses a weighted sum approach where **relative ratios** determin
 
 ⚠️ **Note on 3D Optimization Accuracy**: The 3D optimization mode (including wing X position) has **lower interpolation precision** compared to the 2D mode. Adding the third design variable significantly increased computational time during the response surface generation, requiring a coarser sampling grid. For highest accuracy, use the 2D optimization mode (span & chord only).
 
+## 📥 Installation & Usage
+1. **Download** the latest release from the [Releases](../../releases) page
+2. **Extract** the entire `C130_Pareto_Optimizer` folder to your desired location
+3. **Run** `C130_Pareto_Optimizer.exe`
+
+⚠️ **Important**: Do NOT run only the `.exe` file. The entire folder structure is required, including the `_internal` directory with all dependencies.
+
 ## 💻 System Requirements
 ### Operating System
 - Windows 10 or Windows 11 (64-bit)
@@ -63,13 +70,7 @@ The optimization uses a weighted sum approach where **relative ratios** determin
 ### Dependencies (Pre-installed in executable)
 The standalone executable includes all necessary dependencies. No Python installation required.
 
-## 📥 Installation & Usage
-### Option 1: Download Pre-Built Executable (Recommended)
-1. **Download** the latest release from the [Releases](../../releases) page
-2. **Extract** the entire `C130_Pareto_Optimizer` folder to your desired location
-3. **Run** `C130_Pareto_Optimizer.exe`
 
-⚠️ **Important**: Do NOT run only the `.exe` file. The entire folder structure is required, including the `_internal` directory with all dependencies.
 
 
 ## 📁 Project Structure
