@@ -25,6 +25,33 @@ The tool allows engineers and researchers to visualize trade-offs between differ
 https://github.com/user-attachments/assets/ea178e4f-2317-4cf3-af54-b785104a1977
 
 
+### Optimization Objectives and Constraint
+
+The tool visualizes results from multi-objective optimizations with the following objectives:
+
+| Objective | Type | Description |
+|-----------|------|-------------|
+| **Max Efficiency (E)** | Maximize | Max Trimmed Aerodynamic Efficiency (L/D ratio) |
+| **STO** | Minimize | Takeoff distance according to FAR25 regulations |
+| **MWTO** | Minimize | Aircraft total estimated maximum take off weight |
+| **Fuel Consumption** | Minimize | Total fuel required for mission |
+| **Mission Time** | Minimize | Total mission duration |
+
+
+| Constraint | Requirement | Purpose |
+|------------|-------------|---------|
+| **SSM** (Static Margin, sign-reversed) | > 0.15 | Ensures longitudinal static stability |
+| **Tail Volume Coefficient** (ηh) | 0.7 ≤ ηh ≤ 1.25 | Guarantees longitudinal stability and controllability |
+
+#### Weight Configuration Examples
+
+The optimization uses a weighted sum approach where **relative ratios** determine the importance of each objective, not absolute values. 
+- Setting weights `[100, 0, 0, 0, 0]` produces the **same result** as `[2, 0, 0, 0, 0]` (both prioritize only efficiency)
+- Setting `[1, 1, 0, 0, 0]` means equal importance between efficiency and STO
+
+
+⚠️ **Note on 3D Optimization Accuracy**: The 3D optimization mode (including wing X position) has **lower interpolation precision** compared to the 2D mode. Adding the third design variable significantly increased computational time during the response surface generation, requiring a coarser sampling grid. For highest accuracy, use the 2D optimization mode (span & chord only).
+
 ## 💻 System Requirements
 ### Operating System
 - Windows 10 or Windows 11 (64-bit)
@@ -82,16 +109,7 @@ C130_Pareto_Optimizer/
 - **Algorithm**: Radial Basis Function (RBF) interpolation
 - **Kernel**: Thin-plate spline
 - **Data Source**: Pre-computed Pareto fronts from multi-objective optimization
-
-### Optimization Objectives
-The tool visualizes results from optimizations considering:
-- Maximum endurance factor
-- Structural constraints (inertia/semispan ratio)
-- Weight estimation
-- Mission time and fuel consumption
-- Takeoff distance (FAR25)
-- Static stability margin
-
+ Static stability margin
 
 ## 📄 License
 
