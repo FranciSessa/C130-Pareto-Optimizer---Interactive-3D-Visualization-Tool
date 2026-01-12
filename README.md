@@ -22,7 +22,11 @@ The tool allows engineers and researchers to visualize trade-offs between differ
   - 3 Design Variable optimization (span, chord & wing position)
   - Constrained (on longitudinal stability and maneuverability)  and unconstrained Pareto fronts
 
-https://github.com/user-attachments/assets/ea178e4f-2317-4cf3-af54-b785104a1977
+
+
+https://github.com/user-attachments/assets/7069fbdc-7569-48d0-8684-371e56080ec7
+
+
 
 
 ### Optimization Objectives and Constraint
