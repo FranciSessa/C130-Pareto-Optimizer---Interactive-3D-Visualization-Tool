@@ -1,7 +1,8 @@
 # C130 Pareto Optimizer - Interactive 3D Visualization Tool
 This project was carried out by a group of master's students (including myself) at the University of Naples Federico II for the course "Numerical and Experimental Methods for Aircraft Design".
 A real-time 3D visualization and optimization tool for C130 Hercules aircraft design using Pareto front interpolation and interactive parameter exploration.
-More deatils can be found in the projects section of my Linkedin profile: www.linkedin.com/in/francesco-sessa-aer
+More deatils can be found in the tecnical report:
+[📄 View Technical Report (PDF)](./nemad_optimization.pdf)
 
 ## 📋 Overview
 
