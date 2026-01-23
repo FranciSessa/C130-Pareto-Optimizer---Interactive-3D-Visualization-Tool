@@ -71,34 +71,6 @@ The optimization uses a weighted sum approach where **relative ratios** determin
 ### Dependencies (Pre-installed in executable)
 The standalone executable includes all necessary dependencies. No Python installation required.
 
-
-
-
-## 📁 Project Structure
-
-```
-C130_Pareto_Optimizer/
-├── C130_Pareto_Optimizer.exe          # Main executable
-├── _internal/                          # Dependencies (DO NOT DELETE)
-│   ├── openvsp/                       # OpenVSP libraries
-│   ├── degen_geom/                    # Geometry processing
-│   ├── utilities/                      # Helper modules
-│   ├── Interpol2variab/               # 2D interpolation data
-│   │   └── interpolators/
-│   ├── Interpolations3variab/         # 3D interpolation data
-│   │   └── interpolators/
-│   ├── result_2Dquinta_prova_ParteoFronts_constrained_SPLINE/
-│   │   └── nbi_results.txt
-│   ├── result_2Dquinta_prova_ParteoFronts_unconstrained_SPLINE/
-│   │   └── nbi_results.txt
-│   ├── result_3Dquinta_prova_ParteoFronts_constrained_SPLINE/
-│   │   └── nbi_results.txt
-│   ├── result_3Dquinta_prova_ParteoFronts_unconstrained_SPLINE/
-│   │   └── nbi_results.txt
-│   └── [other DLLs and dependencies]
-└── c130.vsp3                          # Aircraft model
-```
-
 ## 🛠️ Technologies Used
 
 - **Python 3.11**: Core programming language
@@ -108,14 +80,6 @@ C130_Pareto_Optimizer/
 - **NumPy**: Numerical computations
 - **SciPy**: RBF interpolation
 - **PyInstaller**: Executable packaging
-
-## 📊 Technical Details
-
-### Interpolation Method
-- **Algorithm**: Radial Basis Function (RBF) interpolation
-- **Kernel**: Thin-plate spline
-- **Data Source**: Pre-computed Pareto fronts from multi-objective optimization
- Static stability margin
 
 ## 📄 License
 
